@@ -28,5 +28,5 @@ def test3():
 
 @home_bp.route('/test4/')
 def test4():
-    return "Hello for test4"
+    return "Hello from test4"
 
