@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, Response
 
 contact_bp = Blueprint('contact', __name__)
 
@@ -32,4 +32,4 @@ def test3():
 
 @contact_bp.route('/test4/')
 def test4():
-    return "Hello from test4"
+    return Response("{'a':'b'}", status=500, mimetype='application/json')

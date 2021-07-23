@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, Response
 import flask_monitoringdashboard as dashboard
 from home import home_bp
 from contact import contact_bp
